@@ -1,0 +1,44 @@
+{
+  "name": "moka-code",
+  "version": "0.0.1",
+  "description": "CLI para o Ecossistema de Desenvolvimento do Machi",
+  "type": "module",
+  "main": "dist/moka-cli.js",
+  "bin": {
+    "moka-cli": "dist/moka-cli.js",
+    "moka-install": "dist/moka-install.js",
+    "moka-rename": "dist/moka-rename.js",
+    "moka-extensions": "dist/moka-extensions.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bun build ./src/moka-cli.ts ./src/moka-install.ts ./src/moka-rename.ts ./src/moka-extensions.ts --outdir ./dist --target node",
+    "postinstall": "echo 'Post-install script for moka-code'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cafe-GameDev/MokaCode-CLI.git"
+  },
+  "keywords": [
+    "godot",
+    "moka-code",
+    "moka-install",
+    "moka-rename"
+  ],
+  "author": "Machi",
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "moka-code-cli": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}

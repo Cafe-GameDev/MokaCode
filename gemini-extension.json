@@ -1,0 +1,18 @@
+{
+  "name": "moka-code",
+  "version": "1.0.1",
+  "context": [
+    {"path": "GEMINI.md"},
+    {"path": "context/**/*.md"}
+  ],
+  "mcpServers": {
+    "nodeServer": {
+      "command": "node",
+      "args": [
+        "${extensionPath}${/}dist${/}moka-cli.js",
+        "${extensionPath}${/}dist${/}moka-extensions.js"
+      ],
+      "cwd": "${extensionPath}"
+    }
+  }
+}
