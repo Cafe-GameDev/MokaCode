@@ -1,6 +1,7 @@
 {
   "name": "moka-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "CLI para o Ecossistema de Desenvolvimento do Machi",
   "context": [
     {"path": "GEMINI.md"},
     {"path": "context/**/*.md"}
