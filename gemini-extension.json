@@ -1,6 +1,6 @@
 {
   "name": "moka-code",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "context": [
     {"path": "GEMINI.md"},
     {"path": "context/**/*.md"}
